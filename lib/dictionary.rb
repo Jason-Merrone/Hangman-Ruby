@@ -1,9 +1,9 @@
 class Dictionary
   def initialize(file_containing_dictionary)
 
-    @dict_array = []
+    @dict_array = ["default"]
 
-    return "error" unless File.exist? file_containing_dictionary
+    return 1 unless File.exist? file_containing_dictionary
     f = File.open(file_containing_dictionary)
 
     while line = f.gets do

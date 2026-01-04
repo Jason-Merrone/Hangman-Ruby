@@ -4,5 +4,7 @@ module GameStatesEnum
   LOAD = 1
   GAME = 2
   WIN = 3
-  RESET = 4
+  LOSE = 4
+  RESET = 5
+  SAVE = 6
 end
