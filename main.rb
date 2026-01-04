@@ -1,8 +1,10 @@
-require_relative "lib/game_state"
+# frozen_string_literal: true
 
-dictionary_file_path = "dir/google-10000-english-no-swears.txt"
+require_relative 'lib/game_state'
+
+dictionary_file_path = 'dir/google-10000-english-no-swears.txt'
 game = GameState.new(dictionary_file_path)
 
-loop do 
-  break unless game.update == 0
+loop do
+  break unless game.update.zero?
 end
